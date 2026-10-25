@@ -1,0 +1,29 @@
+{
+  "name": "ecotrace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test-assistant.js && node test-scanner-feature1.js && node test-gemini-vision.js && node test-frontend-integration.js && node test-homepage-routing.js",
+    "test:assistant": "node test-assistant.js",
+    "test:vision": "node test-gemini-vision.js",
+    "test:frontend": "node test-frontend-integration.js",
+    "test:routing": "node test-homepage-routing.js",
+    "test:all": "node test-upgrade.js && node test-verify.js && node test-scanner-feature1.js && node test-assistant.js && node test-gemini-vision.js && node test-frontend-integration.js && node test-homepage-routing.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "@xenova/transformers": "^2.17.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.2.1",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4"
+  }
+}
